@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mani Chowdary : web developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8045adf93f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#mywork">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-solid fa-xmark"
+              id="small"
+              style="color: black"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i
+            class="fa-solid fa-bars"
+            id="small"
+            style="color: black"
+            onclick="openmenu()"
+          ></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi,I'm <span>Mani</span> <br />
+            from India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-----------this is about section------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="profile.jpg" />
+          </div>
+          <div class="col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p id="about-text">
+              I am a motivated and versatile individual, always eager to take on
+              new challenges. With a passion for learning I am dedicated to
+              delivering high-quality results. With a positive attitude and a
+              growth mindset, I am ready to make a meaningful contribution and
+              achieve great things.
+            </p>
+            <div class="tabs">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development</span><br />
+                  <ul>
+                    <li>React JS, PHP, Laravel</li>
+                    <li>HTML, CSS</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Backend Development</span><br />
+                  <ul>
+                    <li>Node JS, Express JS</li>
+                  
+                    <li>MongoDB, SQL</li>
+                  </ul>
+                </li>
+                <li><span>Programming Languages</span><br />
+                  <ul>
+                    <li>C, CPP</li>
+                    <li>JAVA, Javascript</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />web application development
+                </li>
+                <li>
+                  <span>Mern Stack Development</span><br />Mern Stack development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Lovely Professional University, Jalandhar<br/>
+                  <p class="education">Bachelor of Technology - BTech, Computer Science and Engineering
+                    <br>Oct 2020 - June 2024<br>
+                    I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Lovely Professional University. I have completed 6 semesters and have a
+                      CGPA of 7.84. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.
+                  </p>
+                </span></li>
+                <li><span>Gangadhar Meher Junior College, Sambalpur<br/>
+                  <p class="education">CHSE(XII), Science with Computer
+                    <br>Sep 2018 - March 2024<br>
+                    I completed my class 12 high school education at Gangadhar Meher Junior College, Sambalpur,
+                     where I studied Science with Information Technology(IT).
+                  </p>
+                </span></li>
+                <li><span>Siddhartha Public School, Bargarh<br/>
+                  <p class="education">CBSE(X), Science with Computer
+                    <br>March 2016 - March 2018<br>
+                    I completed my class 10 education at Siddharta Public School, Bargarh.
+                  </p>
+                </span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------services section------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Training</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-file-code"></i>
+            <h2>React JS</h2>
+            <p>
+              Completed a Training on react JS from CipherSchools.
+            </p>
+            <a href="https://drive.google.com/file/d/1tGoWiRUMJ0ISXFBzElMZGMLxtgehd6Br/view?usp=sharing" target="_blank">View Certificate</a>
+          </div>
+          <div>
+            <!-- <i class="fa-solid fa-gamepad-modern"></i> -->
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>DSA</h2>
+            <p>
+              Well trained on the concepts of Data Structures and Algorithms from GeeksforGeeks platform.
+            </p>
+            <a href="https://drive.google.com/file/d/1x3qDu_szeQBM0DtvEtC_dh3Ny_il_tzx/view?usp=sharing" target="_blank">View Certificate</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>DBMS</h2>
+            <p>
+              successfully completed a course work on Database Management System from Infosys Springboard platform.
+            </p>
+            <a href="https://drive.google.com/file/d/1YZ5SIlmi-n43wBxO1gRixk1BkXKtRtzz/view?usp=sharing" target="_blank">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------My Work section -------------------->
+    <div id="mywork">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="pms.png" />
+            <div class="layer">
+              <h3>Inventory Management System</h3>
+              <p>
+                Openkart is a Inventory Management System web application developed by using MERN Stack.
+              </p>
+              <a href="https://github.com/mani5140" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="e-com.png" />
+            <div class="layer">
+              <h3>E-Commerce Website</h3>
+              <p>
+                Ourkart is an E-Commerce website developed by using Raect JS.
+              </p>
+              <a href="https://github.com/mani5140" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="quiz.png" />
+            <div class="layer">
+              <h3>Quiz Website</h3>
+              <p>
+                Quizzer is online quiz appliction, Build by using Laravel.
+              </p>
+              <a href="https://github.com/mani5140/Quiz-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <a href="" class="switch">See More</a>
+        </div>
+      </div>
+    </div>
+    <!------------------ contact section ------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>srimanikantagarapati12@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i>8917611699</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/mani.manimanikanta.10" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.instagram.com/mr.classic2002/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/srimanikanta/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/mani5140" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1_e1K1adPek0EIIIueTurw5b--_3rI_79/view?usp=sharing" download class="switch btn" target="_blank">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="switch btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Mani<i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxDQADuKEkQRRed1ToOsgeDYi_-86q3QsfMKgLH2Cx7Tggu2WB-syPtdE9oXtNyzu6G/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
